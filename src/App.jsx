@@ -1,27 +1,16 @@
 import React from 'react'
 import "./App.css";
+import { TwitterFollowCard } from './TwitterFollowCard';
 
 export const App = () => {
   return (
-    <article className='tw-followCard'>
-        <header className='tw-followCard-header'>
-            <img 
-            className='tw-followCard-avatar'
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtwHGbBun5jLcARrAqEug83OeGrSmECj4pEg&s" alt="El avatar" />
-            <div className='tw-followCard-info'>
-                <strong>Rodrigo Pavez</strong>
-                <span
-                    className='tw-followCard-info'>
-                    @rpavezreyes
-                </span>
-            </div>
-        </header>
+    <section className='App'>
+    
+    <TwitterFollowCard  isFollowing={true} userName={"ferrari"} name={"Rodrigo Pavez"}/>
+    <TwitterFollowCard  isFollowing={false} userName={"elonmusk"} name={"Elon Musk"}/>
+    <TwitterFollowCard  isFollowing userName={"ford"} name={"Henry Ford"}/>
+    <TwitterFollowCard  isFollowing userName={"messi"} name={"Lionel Messi"}/>
 
-        <aside>
-            <button className='tw-followCard-button'>
-                Seguir
-            </button>
-        </aside>
-    </article>
-  )
+    </section>
+    )
 }
