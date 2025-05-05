@@ -2,15 +2,41 @@ import React from 'react'
 import "./App.css";
 import { TwitterFollowCard } from './TwitterFollowCard';
 
+
+const users = [
+    {
+        userName: "ferrari",
+        name:"Rodrigo Pavez",
+        isFollowing: true
+    },
+    {
+        userName:"mercedez",
+        name:"Mercedez Benito",
+        isFollowing: false
+    },
+    {
+        userName:"messi",
+        name: "Lionel Messi",
+        isFollowing:true
+    }
+]
+
 export const App = () => {
   return (
     <section className='App'>
     
-    <TwitterFollowCard  isFollowing={true} userName={"ferrari"} name={"Rodrigo Pavez"}/>
-    <TwitterFollowCard  isFollowing={false} userName={"elonmusk"} name={"Elon Musk"}/>
-    <TwitterFollowCard  isFollowing userName={"ford"} name={"Henry Ford"}/>
-    <TwitterFollowCard  isFollowing userName={"messi"} name={"Lionel Messi"}/>
+       { users.map(user => {
+            const {userName, name, isFollowing}=user
+            return(
+                <TwitterFollowCard
+                key={userName}
+                    userName={userName}>
 
+                    {name}
+                    </TwitterFollowCard>
+                    
+            )
+        })}
     </section>
     )
 }
