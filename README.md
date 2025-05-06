@@ -2,7 +2,7 @@
 
 Simulación del componente de tarjeta de seguir de Twitter, desarrollada con **React** y **Vite**.
 
-👉 **[Ver demo en vivo](https://rodricopavezreyes.github.io/TwitterCard/)**
+👉 **[Ver demo en vivo](https://rodripopavezreyes.github.io/TwitterCard/)**
 
 ---
 
