@@ -38,7 +38,7 @@ Ve a: http://localhost:5173
 
 ### 🖼️ Vista previa
 Puedes ver la app funcionando en:
-📍 https://rodricopavezreyes.github.io/TwitterCard/
+📍 https://rodrigopavezreyes.github.io/TwitterCard/
 
 ### 👨‍💻 Autor
 Rodrigo Pavez Reyes
